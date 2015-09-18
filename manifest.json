@@ -1,0 +1,20 @@
+{
+  "short_name": "Trønderloven",
+  "name": "Trønderloven",
+  "icons": [
+    {
+      "src": "icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#333333",
+  "background_color": "#ffffff",
+  "start_url": "index.html",
+  "display": "standalone"
+}
