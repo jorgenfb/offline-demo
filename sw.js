@@ -1,9 +1,10 @@
 const CACHE_NAME = 'troendeloven-v1';
 const urlsToCache = [
-  'index.html',
+  '/',
   'app.js',
   'styles.css',
-  'data.json'
+  'data.json',
+  'manifest.json'
 ];
 
 // Set the callback for the install step
