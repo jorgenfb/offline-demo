@@ -1,6 +1,8 @@
 {
   "short_name": "Trønderloven",
   "name": "Trønderloven",
+  "theme_color": "#17769B",
+  "background_color": "#FAFAFA",
   "icons": [
     {
       "src": "icon-128.png",
