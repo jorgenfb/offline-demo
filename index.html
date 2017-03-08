@@ -13,6 +13,16 @@
     <header><h1 class="title">Trønderloven</h1></header>
     <div class="container">Det bli itj fæst uten skinnvæst</div>
 
+    <!-- dialog to input new quotes -->
+    <button class="add-button fab">+</button>
+    <div class="input-area dialog-backdrop">
+      <form class="input-content dialog">
+        <label for="quote">DITT BIDRAG</label>
+        <input name="quote" id="quote" placeholder="EKS: D BLI ITJ FART UTEN BART"></input>
+        <button type="submit" class="btn btn--primary">Send inn</button>
+      </div>
+    </div>
+
     <script src="app.js"></script>
     <script>
       if ('serviceWorker' in navigator) {

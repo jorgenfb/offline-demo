@@ -7,6 +7,7 @@ html {
   box-sizing: inherit;
 }
 
+/* Basic resets */
 html, body {
   margin: 0;
   height: 100%;
@@ -42,4 +43,92 @@ header {
   padding: 20px;
   flex: 1;
   -webkit-user-select: none;
+}
+
+.fab {
+	  border:none;
+	  font-size:1.5em;
+	  color:white;
+	  background-color: #d23f31;
+	  border-radius: 50%;
+	  width: 56px;
+	  height: 56px;
+	  margin: auto;
+	  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+.fab:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+  transition: box-shadow 150ms cubic-bezier(0,0,.2,1);
+}
+
+.add-button {
+  position: absolute;
+  right: 12px;
+  bottom: 23px;
+}
+
+.input-area {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scale(0.1) translate(500%, 500%);
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0,0,.3,1), transform 0.2s cubic-bezier(0,0,.3,1);
+  background-color: rgba(0,0,0,.6);
+}
+
+.input-area--active {
+  transform: scale(1) translate(0);
+  opacity: 1;
+}
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.btn--primary {
+  background-color: #17769B;
+  color: #fff;
+}
+
+.input-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 400px;
+}
+
+.dialog-backdrop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+  border-radius: 2px;
+}
+
+#quote {
+  border: none;
+  margin: 8px 0;
+  padding: 8px 0;
+  border-bottom: 2px solid #17769B;
+}
+
+label {
+  font-size: 10px;
 }

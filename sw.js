@@ -32,3 +32,12 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+
+self.addEventListener('sync', function(event) {
+  event.waitUntil(
+    fetch('https://pwa-demo-485c1.firebaseio.com/newItems.json', {
+      method: 'POST',
+      body: JSON.stringify(event.tag)
+    })
+  );
+});
